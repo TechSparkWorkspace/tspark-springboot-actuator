@@ -10,7 +10,10 @@ management:
       show-details: always
     env:
       show-values: always
+    shutdown:
+      enabled: true
   endpoints:
     web:
       exposure:
-        include: [ "health", "info", "metrics", "env", "loggers", "mappings" ]
+        #        include: [ "health", "info", "metrics", "env", "loggers", "mappings", "threaddump", "startup" ]
+        include: "*"

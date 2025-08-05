@@ -64,10 +64,10 @@ curl http://localhost:8080/actuator/env
 curl http://localhost:8080/actuator/mappings
 ```
 
-### 🔄 Recent HTTP Traces
+### 🧵 Thread Dump
 
 ```bash
-curl http://localhost:8080/actuator/httptrace
+curl http://localhost:8080/actuator/threaddump
 ```
 
 ### 💾 Heap Dump
