@@ -4,8 +4,13 @@ info:
     description: This is a Spring Boot application to showcase the Actuator capabilities
     version: 1.0.0
 
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: "*"
+management:
+  endpoint:
+    health:
+      show-details: always
+    env:
+      show-values: always
+  endpoints:
+    web:
+      exposure:
+        include: [ "health", "info", "metrics", "env", "loggers", "mappings" ]
