@@ -1,4 +1,4 @@
-package org.techspark;
+package org.techspark.product;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
